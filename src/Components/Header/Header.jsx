@@ -3,7 +3,7 @@ export function Header() {
   return (
     <main className={style.body}>
       <div className={style.block_logo}>
-        <p className={style.title}> House and Travel </p>
+        <p className={style.title}> Hourse and Travel </p>
       </div>
       <div className={style.nav_block}>
         <div className={style.block_title}>

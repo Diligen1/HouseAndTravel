@@ -16,6 +16,7 @@
 .title {
   font-size: 22px;
   font-family: Roboto;
+  cursor: default;
 }
 .nav_block {
   width: 40%;
@@ -34,7 +35,7 @@
   transition: 0.5s;
 }
 .block_title:hover {
-  color: rgb(0, 255, 21);
+  color: #4400ff;
 }
 .text {
   margin: 0;
