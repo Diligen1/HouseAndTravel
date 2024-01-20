@@ -17,9 +17,10 @@
   position: absolute;
 }
 .title {
-  font-size: 26px;
-  font-family: Roboto;
+  font-size: 36px;
+  font-family: Bad Script;
   cursor: default;
+  color: black;
 }
 .img {
   width: 100%;

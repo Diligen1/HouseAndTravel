@@ -11,7 +11,7 @@ export function Main() {
       <Header className={style.header} />
       <Banner className={style.banner} />
       <Block_info />
-      <h1>Галерея</h1>
+      <h1 className={style.title}>Галерея</h1>
       <Information />
       <Rating />
       <Footer />
