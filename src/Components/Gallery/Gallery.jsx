@@ -1,4 +1,4 @@
-import style from "./Info.module.css";
+import style from "./Gallery.module.css";
 import image from "../../image/galer/photo1705559289.jpeg";
 import image_2 from "../../image/galer/photo1705559289 (1).jpeg";
 import image_3 from "../../image/galer/photo1705559289 (2).jpeg";

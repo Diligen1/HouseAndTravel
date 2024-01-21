@@ -19,3 +19,15 @@
   margin: 0;
   cursor: default;
 }
+.nav_photo {
+  cursor: pointer;
+  padding: 15px 30px;
+  border: 1px solid black;
+  border-radius: 32px;
+  background-color: transparent;
+  transition: 0.4s;
+}
+.nav_photo:hover {
+  color: #4400ff;
+  border: 1px solid #4400ff;
+}
