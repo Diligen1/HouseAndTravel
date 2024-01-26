@@ -1,5 +1,5 @@
 import style from "./Information.module.css";
-export function Rating() {
+export function Information() {
   return (
     <main className={style.body}>
       <div className={style.info_block}>

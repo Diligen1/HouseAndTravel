@@ -27,7 +27,7 @@ const images = [
   { id: 9, src: image_9 },
   { id: 10, src: image_10 },
 ];
-export function Information() {
+export function Gallery() {
   return (
     <main className={style.body}>
       <Swiper
