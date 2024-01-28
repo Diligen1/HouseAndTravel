@@ -6,7 +6,6 @@ import { Information } from "../../Components/Information/Information";
 import { Footer } from "../../Components/Footer/Footer";
 import { Block_info } from "../../Components/block_info/Block_info";
 import { Rating } from "../../Components/Rang/Rang";
-import { News } from "../../Components/News/News";
 import { Maps } from "../../Components/Maps/Maps";
 export function Main() {
   return (
@@ -19,7 +18,6 @@ export function Main() {
       <p className={style.nav_photo}>Показать ещё</p>
       <Information />
       <Rating />
-      <News />
       <Maps />
       <Footer />
     </main>

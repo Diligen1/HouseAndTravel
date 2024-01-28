@@ -1,7 +1,7 @@
 .ava {
   width: 40px;
   height: 40px;
-  background-color: blueviolet;
+  background-color: #4400ff;
   border-radius: 50%;
   cursor: default;
 }
@@ -22,7 +22,7 @@
   cursor: default;
 }
 .star {
-  color: blue;
+  color: #4400ff;
   font-size: 28px;
   margin: 0;
   cursor: default;
@@ -56,6 +56,7 @@
   font-family: Roboto;
   padding: 0 10px;
   margin: 0;
+  color: #4400ff;
 }
 .likes_contain span {
   font-size: 18px;
@@ -64,4 +65,5 @@
   font-family: Roboto;
   padding: 0 10px;
   margin: 0;
+  color: #4400ff;
 }

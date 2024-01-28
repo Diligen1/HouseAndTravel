@@ -82,11 +82,7 @@ export function Rating() {
         <div className={style.block_review}>
           <p className={style.text_review}>5.0</p>
           <div className={style.block_block}>
-            <div className={style.block}></div>
-            <div className={style.block}></div>
-            <div className={style.block}></div>
-            <div className={style.block}></div>
-            <div className={style.block}></div>
+            <p className={style.block}>★★★★★</p>
           </div>
           <p className={style.count_review}>20 Отзывов</p>
         </div>

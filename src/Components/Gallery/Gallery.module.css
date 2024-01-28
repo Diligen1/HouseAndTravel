@@ -7,13 +7,13 @@
 }
 .block_img {
   width: 100%;
-  height: 240px;
+  height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 .img {
   width: 100%;

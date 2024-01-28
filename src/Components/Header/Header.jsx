@@ -1,27 +1,44 @@
 import style from "./Header.module.css";
+import { Link } from "react-router-dom";
 export function Header() {
+  const value = [
+    {
+      id: 1,
+      icon: <i className="fi fi-rr-home"></i>,
+      name: "Главная",
+      link: "/",
+    },
+    {
+      id: 2,
+      icon: <i className="fi fi-rr-pencil"></i>,
+      name: "Отзыв",
+      link: "/review",
+    },
+    {
+      id: 3,
+      icon: <i className="fi fi-rr-picture"></i>,
+      name: "Галерея",
+      link: "/gallery",
+    },
+    {
+      id: 4,
+      icon: <i className="fi fi-rr-apps"></i>,
+      name: "Новости",
+      link: "/news",
+    },
+  ];
   return (
     <main className={style.body}>
       <div className={style.block_logo}>
         <p className={style.title}> Hourse and Travel </p>
       </div>
       <div className={style.nav_block}>
-        <div className={style.block_title}>
-          <i className="fi fi-rr-home"></i>
-          <p className={style.text}>Главная</p>
-        </div>
-        <div className={style.block_title}>
-          <i className="fi fi-rr-pencil"></i>
-          <p className={style.text}>Отзыв</p>
-        </div>
-        <div className={style.block_title}>
-          <i className="fi fi-rr-picture"></i>
-          <p className={style.text}>Галерея</p>
-        </div>
-        <div className={style.block_title}>
-          <i className="fi fi-rr-apps"></i>
-          <p className={style.text}>Новости</p>
-        </div>
+        {value.map((x, index) => (
+          <Link key={index} to={x.link} className={style.block_title}>
+            {x.icon}
+            <p className={style.text}>{x.name}</p>
+          </Link>
+        ))}
       </div>
       <div className={style.register_block}>
         <div className={style.language_block}>

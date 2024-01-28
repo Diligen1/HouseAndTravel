@@ -6,6 +6,7 @@
   justify-content: center;
   padding-top: 20px;
   flex-direction: row;
+  padding: 60px 0;
 }
 .left_block {
   width: 30%;
@@ -38,10 +39,9 @@
   cursor: default;
 }
 .block {
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  border-radius: 50%;
+  font-size: 30px;
+  margin: 0;
+  color: #4400ff;
 }
 .count_review {
   font-size: 18px;
