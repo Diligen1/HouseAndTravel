@@ -1,4 +1,3 @@
-import { StarRating } from "../startRating/StarRating";
 import style from "./Reviewer.module.css";
 export function Reviewer({ avatar, name, title, star, text, rating, likes }) {
   return (
