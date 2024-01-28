@@ -1,0 +1,67 @@
+.ava {
+  width: 40px;
+  height: 40px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  cursor: default;
+}
+.block {
+  padding: 20px 10px;
+}
+.ava_block {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.name {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 800;
+  cursor: default;
+}
+.star {
+  color: blue;
+  font-size: 28px;
+  margin: 0;
+  cursor: default;
+}
+.title {
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: Roboto;
+  cursor: default;
+  margin: 0;
+}
+.blocker {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.likes_contain {
+  width: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.likes_contain i {
+  font-size: 18px;
+  cursor: default;
+  font-weight: 500;
+  font-family: Roboto;
+  padding: 0 10px;
+  margin: 0;
+}
+.likes_contain span {
+  font-size: 18px;
+  cursor: default;
+  font-weight: 500;
+  font-family: Roboto;
+  padding: 0 10px;
+  margin: 0;
+}

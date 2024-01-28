@@ -1,71 +1,101 @@
 .body {
   width: 90%;
-  height: 600px;
-  border-bottom: 1px solid black;
+  height: auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 20px;
+  flex-direction: row;
 }
 .left_block {
-  width: 40%;
+  width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  justify-content: center;
 }
-.img_block {
-  margin-top: 20px;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.img {
-  width: auto;
-  height: 220px;
-}
-.right_block {
-  width: 60%;
-  height: 100%;
-  border: 1px solid black;
-}
-.rang {
+.block_review {
+  width: 80%;
+  height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.block_block {
+  width: 40%;
+  height: auto;
+  display: flex;
   flex-direction: row-reverse;
-  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
-.star {
-  color: black;
-  font-size: 32px;
-  cursor: pointer;
-  transition: 0.4s;
-  margin: 0;
-  color: red;
-}
-
-.ocenka {
-  margin: 0;
+.text_review {
+  font-size: 24px;
+  font-weight: 600;
   font-family: Roboto;
-  font-size: 24px;
+  cursor: default;
 }
-.count {
+.block {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.count_review {
   font-size: 18px;
-  margin: 0;
-}
-.block_text {
-  width: 80%;
-}
-.title {
-  font-size: 32px;
-  font-family: Comfortaa;
+  font-weight: 500;
   cursor: default;
+  font-family: Roboto;
 }
-.text {
-  font-size: 24px;
-  font-family: Comfortaa;
+.block_ocenka {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ocenka_text {
+  font-size: 18px;
   cursor: default;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.ocenka_count {
+  font-size: 18px;
+  cursor: default;
+  font-family: Roboto;
+  font-weight: 500;
+}
+.right_block {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.rev_contain {
+  width: 85%;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 32px;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 18px;
+  font-family: Roboto;
+}
+.input::placeholder {
+  font-size: 18px;
+  color: black;
+  font-family: Roboto;
+  padding-left: 10px;
+}
+.block_input {
+  width: 100%;
+  padding: 10px;
 }
