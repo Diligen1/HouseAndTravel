@@ -153,4 +153,52 @@
     height: 50px;
     padding-top: 5px;
   }
+  .nav_block {
+    width: 40%;
+  }
+  .block_title {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .language_block {
+    width: 50%;
+    height: 20px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  .btn {
+    padding: 6px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 14px;
+  }
+  .body {
+    width: 90%;
+    height: 40px;
+    padding-top: 5px;
+  }
+
+  .block_title {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .language_block {
+    width: 50%;
+    height: 20px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  .btn {
+    padding: 6px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
 }
