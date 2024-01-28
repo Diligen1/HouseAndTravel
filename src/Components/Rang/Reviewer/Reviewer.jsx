@@ -17,7 +17,7 @@ export function Reviewer({ avatar, name, title, star, text, rating, likes }) {
       <div className="info-container">
         <p className={style.star}>{star}</p>
         <h4 className={style.title}>{title}</h4>
-        <p>{text}</p>
+        <p className={style.text}>{text}</p>
       </div>
     </div>
   );

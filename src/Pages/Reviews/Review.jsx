@@ -3,12 +3,26 @@ import { Header } from "../../Components/Header/Header";
 import { Footer } from "../../Components/Footer/Footer";
 import { StarRating } from "../../Components/StarRating/StarRating";
 import { useState } from "react";
+
 export function Review() {
   const [userRating, setUserRating] = useState(0);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setSelectedImage(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   const handleRatingChange = (newRating) => {
     setUserRating(newRating);
   };
+
   return (
     <main className={style.body}>
       <Header className={style.header} />
@@ -42,11 +56,26 @@ export function Review() {
           </div>
           <div className={style.image_block}>
             <h2 className={style.text}>Добавьте Изображение</h2>
-            <button className={style.btn_img}>
-              Нажми что бы добавить изображение
-            </button>
+
+            <input
+              type="file"
+              className={style.btn_img}
+              onChange={handleImageChange}
+            />
+            {selectedImage && (
+              <div className={style.block_img}>
+                <h3 className={style.text}>Выбранное изображение:</h3>
+                <img
+                  src={selectedImage}
+                  alt="Выбранное изображение"
+                  className={style.img_img}
+                />
+              </div>
+            )}
           </div>
-          <button className={style.btn_pass}> Отправить</button>
+          <div className={style.block_pass}>
+            <button className={style.btn_pass}>Отправить</button>
+          </div>
         </div>
       </div>
 

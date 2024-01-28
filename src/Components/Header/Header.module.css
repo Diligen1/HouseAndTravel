@@ -14,7 +14,7 @@
   width: 20%;
 }
 .title {
-  font-size: 22px;
+  font-size: 30px;
   font-family: Bad Script;
   cursor: default;
 }
@@ -33,6 +33,7 @@
   align-items: center;
   cursor: pointer;
   transition: 0.4s;
+  font-size: 18px;
   text-decoration: none;
 }
 .block_title:hover {
@@ -40,7 +41,7 @@
 }
 .text {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Comfortaa;
 }
 .register_block {
@@ -52,6 +53,7 @@
 }
 .language_block {
   width: 50%;
+  height: 40px;
   border-radius: 32px;
   display: flex;
   flex-direction: row;
@@ -83,4 +85,72 @@
 .lenguage {
   padding: 0px 10px;
   border-left: 1px solid black;
+}
+
+@media only screen and (max-width: 1279px) {
+  .title {
+    font-size: 22px;
+  }
+  .body {
+    width: 80%;
+    height: 60px;
+    padding-top: 5px;
+  }
+  .block_title {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .language_block {
+    width: 40%;
+    height: 30px;
+    border-radius: 32px;
+    font-size: 14px;
+  }
+  .btn {
+    padding: 8px 25px;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+  .nav_block {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .title {
+    font-size: 17px;
+  }
+  .body {
+    width: 90%;
+    height: 55px;
+    padding-top: 5px;
+  }
+  .block_title {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .language_block {
+    width: 50%;
+    height: 20px;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+  .btn {
+    padding: 6px 20px;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 16px;
+  }
+  .body {
+    width: 90%;
+    height: 50px;
+    padding-top: 5px;
+  }
 }

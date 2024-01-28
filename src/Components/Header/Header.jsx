@@ -20,12 +20,6 @@ export function Header() {
       name: "Галерея",
       link: "/gallery",
     },
-    {
-      id: 4,
-      icon: <i className="fi fi-rr-apps"></i>,
-      name: "Новости",
-      link: "/news",
-    },
   ];
   return (
     <main className={style.body}>

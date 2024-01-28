@@ -34,6 +34,10 @@
   cursor: default;
   margin: 0;
 }
+.text {
+  font-size: 18px;
+  cursor: default;
+}
 .blocker {
   width: 100%;
   display: flex;
@@ -66,4 +70,32 @@
   padding: 0 10px;
   margin: 0;
   color: #4400ff;
+}
+@media only screen and (max-width: 1279px) {
+  .ava {
+    width: 35px;
+    height: 35px;
+  }
+  .ava_block {
+    width: 120px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .star {
+    font-size: 24px;
+  }
+  .title {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+  .likes_contain i {
+    font-size: 16px;
+  }
+  .likes_contain span {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 16px;
+  }
 }

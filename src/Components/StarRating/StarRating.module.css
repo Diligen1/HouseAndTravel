@@ -6,11 +6,11 @@
 .star {
   cursor: pointer;
   color: rgb(170, 170, 170);
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .starFilled {
   color: #4400ff;
   cursor: pointer;
-  font-size: 36px;
+  font-size: 30px;
 }

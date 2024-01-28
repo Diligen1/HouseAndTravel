@@ -15,7 +15,6 @@ export function Main() {
       <Block_info />
       <h1 className={style.title}>Галерея</h1>
       <Gallery />
-      <p className={style.nav_photo}>Показать ещё</p>
       <Information />
       <Rating />
       <Maps />

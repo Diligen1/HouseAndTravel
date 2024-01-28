@@ -3,7 +3,7 @@
   height: auto;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 20px;
   flex-direction: row;
   padding: 60px 0;
@@ -61,11 +61,13 @@
   font-size: 18px;
   cursor: default;
   font-family: Roboto;
+  margin: 0;
   font-weight: 500;
 }
 .ocenka_count {
   font-size: 18px;
   cursor: default;
+  margin: 10px;
   font-family: Roboto;
   font-weight: 500;
 }
@@ -98,4 +100,42 @@
 .block_input {
   width: 100%;
   padding: 10px;
+}
+@media only screen and (max-width: 1279px) {
+  .body {
+    padding-top: 20px;
+  }
+  .text_review {
+    font-size: 18px;
+  }
+  .block {
+    font-size: 28px;
+  }
+  .count_review {
+    font-size: 16px;
+  }
+  .ocenka_text {
+    font-size: 16px;
+  }
+  .ocenka_count {
+    font-size: 16px;
+  }
+  .input {
+    width: 90%;
+    height: 30px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+  .input::placeholder {
+    font-size: 16px;
+    padding-left: 8px;
+  }
+  .block_ocenka {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
