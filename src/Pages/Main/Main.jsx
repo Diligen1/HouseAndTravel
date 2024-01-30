@@ -12,7 +12,7 @@ export function Main() {
     <main className={style.body}>
       <Header className={style.header} />
       <Banner className={style.banner} />
-      <Block_info />
+      <Block_info className={style.block_info} />
       <h1 className={style.title}>Галерея</h1>
       <Gallery />
       <Information />

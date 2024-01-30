@@ -20,3 +20,7 @@
   cursor: default;
   color: #4400ff;
 }
+.block_info {
+  position: absolute;
+  z-index: 0;
+}
