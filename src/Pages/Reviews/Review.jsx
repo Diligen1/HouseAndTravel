@@ -48,9 +48,9 @@ export function Review() {
           <div className={style.text_block}>
             <h2 className={style.text}>Напишите отзыв</h2>
             <textarea
-              rows={6}
-              cols={55}
-              placeholder="Введите текст..."
+              rows={4}
+              cols={30}
+              placeholder="Введите текст ..."
               className={style.textarea}
             />
           </div>

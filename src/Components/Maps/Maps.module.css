@@ -44,11 +44,11 @@
 @media only screen and (max-width: 500px) {
   .body {
     height: 80%;
-    height: 200px;
+    height: 150px;
     padding-bottom: 10px;
   }
   .map {
-    width: 95%;
+    width: 100%;
     height: auto;
     overflow: hidden;
   }
