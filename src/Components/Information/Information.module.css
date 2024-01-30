@@ -91,21 +91,23 @@
 @media only screen and (max-width: 500px) {
   .body {
     width: 100%;
-    height: 500px;
+    height: 250px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .info_block {
     border-radius: 16px;
-    width: 50%;
-    height: 200px;
+    width: 40%;
+    height: 160px;
   }
   .title {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Roboto;
+    padding: 10px;
   }
   .text {
+    overflow: auto;
     font-size: 12px;
     padding: 5px 5px;
   }

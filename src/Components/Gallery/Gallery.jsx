@@ -16,7 +16,6 @@ import "swiper/css/navigation";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 const images = [
-  { id: 1, src: image },
   { id: 2, src: image_2 },
   { id: 3, src: image_3 },
   { id: 4, src: image_4 },
@@ -25,7 +24,6 @@ const images = [
   { id: 7, src: image_7 },
   { id: 8, src: image_8 },
   { id: 9, src: image_9 },
-  { id: 10, src: image_10 },
 ];
 export function Gallery() {
   return (
@@ -34,6 +32,7 @@ export function Gallery() {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={20}
         slidesPerView={3}
+        className={style.mySwiper}
       >
         {images.map((img) => (
           <SwiperSlide key={img.id} className={style.block_slide}>
