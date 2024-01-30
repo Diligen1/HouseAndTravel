@@ -1,4 +1,5 @@
 import style from "./Register.module.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 export function Register() {
   const [isActive, setIsActive] = useState(false);
@@ -58,7 +59,9 @@ export function Register() {
                 className={style.input}
               />
             </div>
-            <button className={style.btn}>Вход</button>
+            <Link to={"/"} className={style.btn}>
+              Вход
+            </Link>
           </div>
         </div>
         <div
