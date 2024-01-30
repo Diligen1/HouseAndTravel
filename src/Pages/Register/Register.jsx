@@ -86,7 +86,7 @@ export function Register() {
             Если вы уже зарегестрировались введите свои данные
           </p>
           <button onClick={handleButtonClick} className={style.btn_register}>
-            Авторизация
+            Регистарация
           </button>
         </div>
       </div>

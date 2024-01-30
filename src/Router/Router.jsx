@@ -1,18 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Main } from "../Pages/Main/Main";
 import { Register } from "../Pages/Register/Register";
-import { Author } from "../Pages/Authorization/Author";
+import { About } from "../Pages/About us/About";
 import { Review } from "../Pages/Reviews/Review";
 import { Gallers } from "../Pages/Gallery/Gallery";
-import { News } from "../Pages/News/News";
 export function Router() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/author" element={<Author />} />
         <Route path="/gallery" element={<Gallers />} />
         <Route path="/review" element={<Review />} />
       </Routes>

@@ -124,7 +124,7 @@
     top: 30px;
     cursor: pointer;
     z-index: 20;
-    color: white;
+    color: #4400ff;
   }
   .block_nav {
     color: white;
@@ -147,7 +147,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background-color: #4400ff;
     z-index: 20;

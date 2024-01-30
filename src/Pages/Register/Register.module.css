@@ -99,6 +99,7 @@ input::placeholder {
   border: none;
   background-color: #3131b8;
   cursor: pointer;
+  text-decoration: none;
 }
 .perehod {
   position: absolute;
@@ -108,7 +109,9 @@ input::placeholder {
   background-color: #3131b8;
   border-radius: 20px 180px 180px 20px;
   z-index: 2;
-  transition: left 0.6s ease-in-out;
+  transition:
+    left 0.6s ease-in-out,
+    border-radius 0.6s ease-in-out;
 }
 .perehod.active {
   right: 0;
@@ -157,17 +160,17 @@ input::placeholder {
   padding: 12px 36px;
   background-color: transparent;
   border: 1px solid white;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Roboto;
   border-radius: 16px;
+  cursor: pointer;
 }
 .left_text {
-  width: 260px;
   text-align: center;
   color: white;
   font-family: Roboto;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 .left_title {
   color: white;
@@ -184,17 +187,119 @@ input::placeholder {
 .right_text {
   color: white;
   text-align: center;
-  width: 260px;
   font-family: Roboto;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 .btn_register {
+  cursor: pointer;
   padding: 12px 36px;
   text-align: end;
   background-color: transparent;
   border: 1px solid white;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Roboto;
   border-radius: 16px;
+}
+@media only screen and (max-width: 1279px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    justify-content: space-between;
+  }
+  .left_contain {
+    left: 70px;
+  }
+  .right_contain {
+    right: 70px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .left_contain {
+    left: 40px;
+  }
+  .right_contain {
+    right: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    position: relative;
+  }
+  .left_block {
+    display: none;
+  }
+  .left_block.active {
+    width: 100%;
+    height: 70%;
+    padding-top: 120px;
+    display: block;
+  }
+  .right_block {
+    width: 100%;
+    height: 70%;
+    display: block;
+    padding-top: 120px;
+    transition:
+      0.6s ease-in-out,
+      padding-top 0.8s ease-in-out;
+  }
+  .right_block.active {
+    display: none;
+  }
+  .perehod {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: -35%;
+    height: 50%;
+    border-radius: 20px 20px 120px 120px;
+    transition:
+      top 0.2s ease-in-out,
+      border-radius 0.2s ease-in-out;
+  }
+  .perehod.active {
+    right: 0;
+    left: 0;
+    top: 90%;
+    height: 50%;
+    position: absolute;
+    border-radius: 120px 120px 20px 20px;
+  }
+  .right_contain {
+    height: 100vh;
+    width: 100%;
+  }
+  .left_contain {
+    width: 100%;
+    height: 100%;
+  }
+  .left_title {
+    display: none;
+  }
+  .left_text {
+    display: none;
+  }
+  .right_title {
+    display: none;
+  }
+  .right_text {
+    display: none;
+  }
+  .btn_author {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-75%);
+  }
+  .btn_register {
+    position: absolute;
+    z-index: 3;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-30%);
+  }
 }
