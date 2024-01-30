@@ -12,7 +12,6 @@ export function Block_info() {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
       >
         <SwiperSlide className={style.slide}>
           <div className={style.main}>

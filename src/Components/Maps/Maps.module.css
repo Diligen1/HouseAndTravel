@@ -29,3 +29,27 @@
     overflow: hidden;
   }
 }
+@media only screen and (max-width: 850px) {
+  .body {
+    height: 80%;
+    height: 250px;
+    padding-bottom: 30px;
+  }
+  .map {
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .body {
+    height: 80%;
+    height: 200px;
+    padding-bottom: 10px;
+  }
+  .map {
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+  }
+}
