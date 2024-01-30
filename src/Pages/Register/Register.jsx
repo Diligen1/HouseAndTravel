@@ -67,16 +67,24 @@ export function Register() {
         <div
           className={`${style.left_contain} ${isActive ? style.active : ""}`}
         >
-          <h1>Hello friends</h1>
-          <p>text</p>
-          <button onClick={handleButtonClick}>Авторизация</button>
+          <h1 className={style.left_title}>Приветствую вас</h1>
+          <p className={style.left_text}>
+            Зарегестрируйтесь для дальнейшего использования
+          </p>
+          <button onClick={handleButtonClick} className={style.btn_author}>
+            Авторизация
+          </button>
         </div>
         <div
           className={`${style.right_contain} ${isActive ? style.active : ""}`}
         >
-          <h1>Hello friends</h1>
-          <p>text</p>
-          <button onClick={handleButtonClick}>Авторизация</button>
+          <h1 className={style.right_title}>Привет Друг</h1>
+          <p className={style.right_text}>
+            Если вы уже зарегестрировались введите свои данные
+          </p>
+          <button onClick={handleButtonClick} className={style.btn_register}>
+            Авторизация
+          </button>
         </div>
       </div>
     </main>

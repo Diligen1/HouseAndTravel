@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(124, 167, 152);
+  background-color: rgb(173, 207, 195);
 }
 .container {
   width: 70%;
@@ -27,7 +27,7 @@
   align-items: center;
   opacity: 0;
   justify-content: center;
-  transition: 0.4s ease-in;
+  transition: 0.6s ease-in-out;
   transform: translateX(-100%);
 }
 .right_block {
@@ -38,7 +38,7 @@
   align-items: center;
   opacity: 1;
   justify-content: center;
-  transition: 0.4s ease-in;
+  transition: 0.6s ease-in-out;
 }
 .title_block {
   width: 100%;
@@ -97,7 +97,7 @@ input::placeholder {
   border-radius: 8px;
   color: white;
   border: none;
-  background-color: blueviolet;
+  background-color: #3131b8;
   cursor: pointer;
 }
 .perehod {
@@ -105,17 +105,17 @@ input::placeholder {
   width: 50%;
   left: 0;
   height: 100%;
-  background-color: blueviolet;
-  border-radius: 20px 180px 100px 20px;
+  background-color: #3131b8;
+  border-radius: 20px 180px 180px 20px;
   z-index: 2;
-  transition: left 0.4s ease-in;
+  transition: left 0.6s ease-in-out;
 }
 .perehod.active {
   right: 0;
   left: 50%;
   height: 100%;
   position: absolute;
-  border-radius: 180px 20px 20px 100px;
+  border-radius: 180px 20px 20px 180px;
 }
 
 .left_contain {
@@ -123,7 +123,10 @@ input::placeholder {
   z-index: 3;
   opacity: 1;
   left: 100px;
-  transition: 0.4s;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .left_contain.active {
   opacity: 0;
@@ -133,7 +136,10 @@ input::placeholder {
   position: absolute;
   right: 100px;
   opacity: 0;
-  transition: 0.4s;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .right_contain.active {
   opacity: 1;
@@ -146,4 +152,49 @@ input::placeholder {
 .right_block.active {
   opacity: 0;
   transform: translateX(100%);
+}
+.btn_author {
+  padding: 12px 36px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: Roboto;
+  border-radius: 16px;
+}
+.left_text {
+  width: 260px;
+  text-align: center;
+  color: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+}
+.left_title {
+  color: white;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 28px;
+}
+.right_title {
+  color: white;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 28px;
+}
+.right_text {
+  color: white;
+  text-align: center;
+  width: 260px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+}
+.btn_register {
+  padding: 12px 36px;
+  text-align: end;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: Roboto;
+  border-radius: 16px;
 }

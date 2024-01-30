@@ -85,6 +85,7 @@
   border-radius: 16px;
   font-size: 16px;
   transition: 0.4s;
+  text-decoration: none;
 }
 .btn:hover {
   color: #4400ff;

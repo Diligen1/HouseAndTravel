@@ -54,7 +54,9 @@ export function Header() {
             <i className="fi fi-rr-globe" style={{ padding: "0px 10px" }}></i>
             <p className={style.lenguage}>RU</p>
           </div>
-          <button className={style.btn}>Вход</button>
+          <Link to={"/register"} className={style.btn}>
+            Вход
+          </Link>
         </div>
       </div>
       <div onClick={() => setOpenMenu(!openMenu)} className={style.mobile_btn}>
