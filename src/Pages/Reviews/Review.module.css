@@ -142,7 +142,7 @@
   }
 
   .right_block {
-    width: 90%;
+    width: 100%;
     border-left: none;
     display: flex;
     align-items: center;

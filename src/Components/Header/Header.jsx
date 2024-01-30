@@ -14,12 +14,18 @@ export function Header() {
     },
     {
       id: 2,
+      icon: <i className="fi fi-rr-users-alt"></i>,
+      name: "О нас",
+      link: "/",
+    },
+    {
+      id: 3,
       icon: <i className="fi fi-rr-pencil"></i>,
       name: "Отзыв",
       link: "/review",
     },
     {
-      id: 3,
+      id: 4,
       icon: <i className="fi fi-rr-picture"></i>,
       name: "Галерея",
       link: "/gallery",
