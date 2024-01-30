@@ -54,46 +54,52 @@
 }
 @media only screen and (max-width: 1279px) {
   .body {
-    height: 120px;
+    height: 140px;
   }
+
   .title {
-    font-size: 28px;
+    font-size: 26px;
   }
   .text {
-    font-size: 16px;
+    font-size: 17px;
   }
   .btn {
     padding: 15px 30px;
+    border: 1px solid white;
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 650px) {
   .body {
     height: 100px;
   }
+
   .title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .text {
     font-size: 14px;
   }
   .btn {
-    padding: 10px 25px;
+    padding: 10px 20px;
+    border: 1px solid white;
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 500px) {
   .body {
-    height: 80px;
+    height: 70px;
   }
+
   .title {
-    font-size: 16px;
-  }
-  .text {
     font-size: 14px;
   }
+  .text {
+    font-size: 12px;
+  }
   .btn {
-    padding: 5px 20px;
+    padding: 8px 12px;
+    border: 1px solid white;
     font-size: 14px;
   }
 }

@@ -32,9 +32,10 @@ export function Gallery() {
     <main className={style.body}>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={20}
         slidesPerView={3}
         navigation
+        className={style.mySwiper}
       >
         {images.map((img) => (
           <SwiperSlide key={img.id} className={style.block_slide}>
