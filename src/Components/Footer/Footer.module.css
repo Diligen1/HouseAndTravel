@@ -1,109 +1,99 @@
 .body {
   padding-top: 40px;
   width: 100%;
-  height: 180px;
+  height: 250px;
+  background-color: #4400ff;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-  background-color: #4400ff;
 }
-.icon_block {
+.title_contain {
+  padding-top: 40px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.contact_contain {
+  padding-top: 40px;
   width: 20%;
-  height: auto;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.follows_contain {
+  padding-top: 40px;
+  width: 20%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.icon_block:hover {
-  color: #4400ff;
-}
-.blocker {
-  width: 40%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.text {
-  margin: 0;
-  font-size: 16px;
-  font-family: Comfortaa;
-}
-.block_title {
-  width: 20%;
+  justify-content: space-around;
 }
 .title {
-  font-size: 22px;
-  font-family: Bad Script;
+  font-size: 32px;
+  cursor: default;
+  font-family: Roboto;
+  font-weight: 400;
+  color: white;
+}
+.text {
+  font-size: 18px;
+  cursor: default;
+  font-family: Roboto;
+  font-weight: 400;
+  color: white;
+}
+.contact_text {
+  font-size: 32px;
+  cursor: default;
+  font-family: Roboto;
+  font-weight: 400;
+  color: white;
+}
+.email {
+  font-size: 16px;
+  margin: 5px;
+  color: white;
+  font-family: Roboto;
   cursor: default;
 }
-.register_block {
-  display: flex;
-  flex-direction: row;
-  width: 20%;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.language_block {
-  width: 50%;
-  border-radius: 32px;
-  display: flex;
-  height: 40px;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  cursor: pointer;
+.adres {
   font-size: 16px;
-  background-color: transparent;
-  transition: 0.4s;
-}
-.language_block:hover {
-  background-color: white;
-  color: #4400ff;
-}
-.btn {
-  padding: 10px 30px;
-  border: none;
-  background-color: black;
+  margin: 5px;
   color: white;
-  font-family: Comfortaa;
-  border-radius: 16px;
+  font-family: Roboto;
+  cursor: default;
+}
+.contact {
   font-size: 16px;
-  transition: 0.4s;
+  margin: 5px;
+  color: white;
+  font-family: Roboto;
+  cursor: default;
 }
-.btn:hover {
-  color: #4400ff;
-  background-color: white;
+.follows_title {
+  font-size: 32px;
+  cursor: default;
+  font-family: Roboto;
+  font-weight: 400;
+  color: white;
 }
-.lenguage {
-  padding: 0px 10px;
-  border-left: 1px solid black;
+.follows_icon {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
-@media only screen and (max-width: 1279px) {
-  .body {
-    padding-top: 30px;
-    height: 120px;
-  }
-  .text {
-    margin: 0;
-    font-size: 14px;
-    font-family: Comfortaa;
-  }
-  .language_block {
-    width: 50%;
-    border-radius: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer;
-    height: 30px;
-    font-size: 16px;
-    background-color: transparent;
-    transition: 0.4s;
-  }
+.follows_icon i {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
 }

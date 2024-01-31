@@ -83,7 +83,7 @@
   width: 85%;
 }
 .input {
-  width: 100%;
+  width: 90%;
   height: 40px;
   border-radius: 32px;
   background-color: transparent;
@@ -100,6 +100,10 @@
 .block_input {
   width: 100%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 1279px) {
   .body {

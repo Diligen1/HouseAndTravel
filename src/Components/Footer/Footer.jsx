@@ -1,47 +1,30 @@
 import style from "./Footer.module.css";
 export function Footer() {
-  const navbar = [
-    {
-      id: 1,
-      icon: "fi fi-rr-home",
-      name: "Главное",
-    },
-    {
-      id: 2,
-      icon: "fi fi-rr-pencil",
-      name: "Отзыв",
-    },
-    {
-      id: 3,
-      icon: "fi fi-rr-picture",
-      name: "Галерея",
-    },
-    {
-      id: 4,
-      icon: "fi fi-rr-apps",
-      name: "Новости",
-    },
-  ];
-
   return (
     <main className={style.body}>
-      <div className={style.block_title}>
-        <h1 className={style.title}>Hourse and Travel</h1>
+      <div className={style.title_contain}>
+        <h1 className={style.title}>House and Travel</h1>
+        <p className={style.text}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor
+          eos amet quisquam dolorem totam asperiores quia recusandae temporibus,
+          commodi eligendi corrupti quidem, labore rem, ipsam harum eaque fugiat
+          molestiae.
+        </p>
       </div>
-      <div className={style.blocker}>
-        {navbar.map((index) => (
-          <div key={index.id} className={style.icon_block}>
-            <i className={index.icon} />
-            <p className={style.text}>{index.name}</p>
-          </div>
-        ))}
+      <div className={style.contact_contain}>
+        <h1 className={style.contact_text}>Контакты</h1>
+        <p className={style.email}>zazaka71@gmail.com</p>
+        <p className={style.adres}>ул. Пушкина 71.21</p>
+        <p className={style.contact}>0(888)-35-35-55</p>
       </div>
-      <div className={style.register_block}>
-        <div className={style.language_block}>
-          <i className="fi fi-rr-globe" style={{ padding: "0px 10px" }}></i>
-          <p className={style.lenguage}>RU</p>
+      <div className={style.follows_contain}>
+        <h1 className={style.follows_title}>Подпишись </h1>
+        <div className={style.follows_icon}>
+          <i className="fi fi-brands-instagram"></i>
+          <i className="fi fi-brands-facebook"></i>
+          <i className="fi fi-brands-whatsapp"></i>
+          <i className="fi fi-brands-telegram"></i>
         </div>
-        <button className={style.btn}>Вход</button>
       </div>
     </main>
   );
