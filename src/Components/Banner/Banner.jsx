@@ -1,6 +1,3 @@
-// Banner.js
-
-import React, { useEffect } from "react";
 import style from "./Banner.module.css";
 import image from "../../image/banner.jpeg";
 
