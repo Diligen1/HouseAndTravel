@@ -154,15 +154,14 @@
     justify-content: center;
   }
   .title_contain {
+    display: none;
+  }
+  .contact_contain {
     width: 40%;
     height: 50%;
   }
-  .contact_contain {
-    width: 20%;
-    height: 50%;
-  }
   .follows_contain {
-    width: 20%;
+    width: 40%;
     height: 40%;
   }
   .title {
