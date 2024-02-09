@@ -1,14 +1,16 @@
 import style from "./Gallery.module.css";
-import image from "../../image/galer/photo1705559289.jpeg";
-import image_2 from "../../image/galer/photo1705559289 (1).jpeg";
-import image_3 from "../../image/galer/photo1705559289 (2).jpeg";
-import image_4 from "../../image/galer/photo1705559289 (3).jpeg";
-import image_5 from "../../image/galer/photo1705559289 (4).jpeg";
-import image_6 from "../../image/galer/photo1705559289 (5).jpeg";
-import image_7 from "../../image/galer/photo1705559289 (6).jpeg";
-import image_8 from "../../image/galer/photo1705559289 (7).jpeg";
-import image_9 from "../../image/galer/photo1705559289 (8).jpeg";
-import image_10 from "../../image/galer/photo1705559289 (9).jpeg";
+import image_2 from "../../image/galer/image_1.jpeg";
+import image_3 from "../../image/galer/image_2.jpeg";
+import image_4 from "../../image/galer/image_3.jpeg";
+import image_5 from "../../image/galer/image_4.jpeg";
+import image_6 from "../../image/galer/image_5.jpeg";
+import image_7 from "../../image/galer/image_6.jpeg";
+import image_8 from "../../image/galer/image_7.jpeg";
+import image_9 from "../../image/galer/image_8.jpeg";
+import image_10 from "../../image/galer/image_10.jpeg";
+import image_13 from "../../image/galer/image_13.jpeg";
+import image_14 from "../../image/galer/image_14.jpeg";
+import image_15 from "../../image/galer/image_15.jpeg";
 import { AiOutlineClose } from "react-icons/ai";
 
 import { useState } from "react";
@@ -27,6 +29,10 @@ const images = [
   { id: 7, src: image_7 },
   { id: 8, src: image_8 },
   { id: 9, src: image_9 },
+  { id: 10, src: image_10 },
+  { id: 13, src: image_13 },
+  { id: 14, src: image_14 },
+  { id: 15, src: image_15 },
 ];
 export function Gallery() {
   const [modalOpen, setModalOpen] = useState(false);

@@ -1,7 +1,7 @@
 import style from "./Our.module.css";
-import image from "../../image/galer/photo1705559289 (7).jpeg";
-import image_2 from "../../image/galer/photo1705559289 (4).jpeg";
-import image_3 from "../../image/galer/photo1705559289 (9).jpeg";
+import image from "../../image/galer/image_1.jpeg";
+import image_2 from "../../image/galer/image_2.jpeg";
+import image_3 from "../../image/galer/image_2.jpeg";
 export function Our() {
   return (
     <main className={style.body}>
