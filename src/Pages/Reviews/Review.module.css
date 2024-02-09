@@ -101,13 +101,15 @@
   width: 100%;
   height: 120px;
   padding: 20px 10px;
-  background-color: #907dc5;
   text-align: center;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   color: white;
   font-size: 16px;
+  background-color: transparent;
+  display: none;
 }
+
 .btn_pass {
   width: 30%;
   height: 50px;
@@ -135,6 +137,29 @@
   width: 110%;
   height: 300px;
   overflow: hidden;
+}
+.image_btn {
+  padding: 15px 30px;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 16px;
+}
+.btn_btn {
+  width: 100%;
+  height: 80px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4400ff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
 }
 @media only screen and (max-width: 1024px) {
   .left_block {

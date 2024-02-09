@@ -9,6 +9,9 @@ import image_7 from "../../image/galer/photo1705559289 (6).jpeg";
 import image_8 from "../../image/galer/photo1705559289 (7).jpeg";
 import image_9 from "../../image/galer/photo1705559289 (8).jpeg";
 import image_10 from "../../image/galer/photo1705559289 (9).jpeg";
+import { AiOutlineClose } from "react-icons/ai";
+
+import { useState } from "react";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
@@ -26,6 +29,14 @@ const images = [
   { id: 9, src: image_9 },
 ];
 export function Gallery() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <main className={style.body}>
       <Swiper
@@ -36,7 +47,7 @@ export function Gallery() {
       >
         {images.map((img) => (
           <SwiperSlide key={img.id} className={style.block_slide}>
-            <div className={style.block_img}>
+            <div className={style.block_img} onClick={openModal}>
               <img
                 src={img.src}
                 alt={`Image ${img.id}`}
@@ -46,6 +57,27 @@ export function Gallery() {
           </SwiperSlide>
         ))}
       </Swiper>
+      {modalOpen && (
+        <div className={style.modal}>
+          <div className={style.modal_block}>
+            <div className={style.modal_left_container}>
+              {images.map((img) => (
+                <div key={img.id} className={style.imager}>
+                  <img
+                    src={img.src}
+                    alt={`Image ${img.id}`}
+                    className={style.modal_img}
+                  />
+                </div>
+              ))}
+            </div>
+            <p className={style.btn_close} onClick={closeModal}>
+              <AiOutlineClose />
+            </p>
+            <p className={style.text_modal}>Галерея House and Travel</p>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

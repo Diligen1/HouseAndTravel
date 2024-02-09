@@ -56,12 +56,22 @@ export function Review() {
           </div>
           <div className={style.image_block}>
             <h2 className={style.text}>Добавьте Изображение</h2>
+            <div className={style.btn_btn}>
+              <input
+                type="file"
+                className={style.btn_img}
+                onChange={handleImageChange}
+                id="fileInput"
+              />
+              <label
+                htmlFor="fileInput"
+                className={style.image_btn}
+                onChange={handleImageChange}
+              >
+                Выбрать файл
+              </label>
+            </div>
 
-            <input
-              type="file"
-              className={style.btn_img}
-              onChange={handleImageChange}
-            />
             {selectedImage && (
               <div className={style.block_img}>
                 <h3 className={style.text}>Выбранное изображение:</h3>
