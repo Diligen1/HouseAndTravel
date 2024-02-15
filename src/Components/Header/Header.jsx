@@ -28,7 +28,7 @@ export function Header() {
   return (
     <main className={style.body}>
       <div className={style.block_title}>
-        <p className={style.title}>House and Travel</p>
+        <p className={style.title}>Horse and Travel</p>
       </div>
       <div
         className={

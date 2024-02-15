@@ -8,7 +8,7 @@ export function Banner() {
         <img src={image} alt="#" className={style.img} />
       </div>
       <div className={style.block_title}>
-        <h1 className={style.title}>Hourse and Travel</h1>
+        <h1 className={style.title}>Horse and Travel</h1>
       </div>
     </main>
   );

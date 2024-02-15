@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <main className={style.body}>
       <div className={style.title_contain}>
-        <h1 className={style.title}>House and Travel</h1>
+        <h1 className={style.title}>Horse and Travel</h1>
         <p className={style.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor
           eos amet quisquam dolorem totam asperiores quia recusandae temporibus,
